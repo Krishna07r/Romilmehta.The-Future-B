@@ -1,0 +1,90 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main content container */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  margin: 0.5rem 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Experience/job layout */
+.job-header {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* Experience & project blocks */
+.company {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.date {
+  color: #777;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
