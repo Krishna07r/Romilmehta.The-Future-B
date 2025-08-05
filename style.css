@@ -8,19 +8,54 @@
 /* Body and layout */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #eaf2f8; /* 🌈 Light blue background */
   color: #333;
   line-height: 1.6;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #003366; /* 💙 Dark blue header */
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 /* Main content container */
 .container {
   max-width: 1000px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 6rem 2rem 2rem; /* Top padding for navbar */
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 /* Headings */
