@@ -5,24 +5,22 @@
   box-sizing: border-box;
 }
 
-/* Body and layout */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #eaf2f8; /* 🌈 Light blue background */
-  color: #333;
+  background-color: #f4f7fa;  /* Light background */
+  color: #222;
   line-height: 1.6;
-  margin: 0;
 }
 
-/* Navbar */
+/* === Navbar === */
 .navbar {
-  background-color: #003366; /* 💙 Dark blue header */
+  background-color: #ffffff;  /* White navbar */
   padding: 1rem 0;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-links {
@@ -38,30 +36,32 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: #0077cc;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
+  color: #005999;
   text-decoration: underline;
 }
 
-/* Main content container */
+/* === Container === */
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 6rem 2rem 2rem; /* Top padding for navbar */
-  background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  padding: 6rem 2rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
 }
 
-/* Headings */
+/* === Headings === */
 h1, h2 {
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: #003366;
 }
 
 h1 {
@@ -70,22 +70,23 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #e0e0e0;
   padding-bottom: 0.3rem;
   margin-top: 2rem;
 }
 
-/* Links */
+/* === Links === */
 a {
-  color: #007bff;
+  color: #0077cc;
   text-decoration: none;
 }
 
 a:hover {
+  color: #005fa3;
   text-decoration: underline;
 }
 
-/* Lists */
+/* === Lists === */
 ul {
   margin: 0.5rem 0 1.5rem 1.5rem;
   padding-left: 1rem;
@@ -95,7 +96,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* Experience/job layout */
+/* === Job Header (Experience Section) === */
 .job-header {
   display: flex;
   align-items: center;
@@ -108,18 +109,31 @@ li {
   margin-right: 15px;
 }
 
-/* Experience & project blocks */
+/* === Company Block === */
 .company {
   font-weight: bold;
   font-size: 1.1rem;
+  color: #222;
 }
 
 .date {
-  color: #777;
+  color: #888;
   font-size: 0.95rem;
   font-style: italic;
 }
 
+/* === Project Block === */
 .project {
   margin-bottom: 1.5rem;
+}
+
+/* === Footer (Optional) === */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+  border-top: 1px solid #eee;
 }
