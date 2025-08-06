@@ -54,7 +54,8 @@ body {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  flex-direction: column; /* Stack vertically */
+  /*grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -63,12 +64,9 @@ body {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: left; /* Align text to left */
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  text-align: center;
 }
-.skill-box i {font-size: 1.8rem; color: #007bff; min-width: 40px; margin-bottom: 0.5rem;}
+.skill-box i {font-size: 1.8rem; color: #007bff; margin-bottom: 0.5rem;}
 
 /* Projects Grid */
 .projects-grid {
