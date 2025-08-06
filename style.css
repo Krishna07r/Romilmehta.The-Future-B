@@ -54,7 +54,7 @@ body {
 /* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  flex-direction: column; /* Stack vertically */
   gap: 1rem;
 }
 
@@ -63,9 +63,12 @@ body {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
+  text-align: left; /* Align text to left */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.skill-box i {font-size: 1.8rem; color: #007bff; margin-bottom: 0.5rem;}
+.skill-box i {font-size: 1.8rem; color: #007bff; min-width: 40px; margin-bottom: 0.5rem;}
 
 /* Projects Grid */
 .projects-grid {
@@ -94,6 +97,39 @@ body {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Experience Grid */
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.experience-card h3 {
+  color: #003366;
+  margin-bottom: 0.3rem;
+}
+
+.company {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+  margin-left: 1.5rem;
+}
+.experience-card li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
 }
 
 /* Certifications */
