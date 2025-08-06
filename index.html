@@ -1,236 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />  
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Romil Mehta | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      margin: 0;
-      padding: 0;
-      
-    }
-
-    
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background: #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      color: #333;
-    }
-
-    img.logo {
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-
-    .section {
-      margin-bottom: 2rem;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .job-header {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .project {
-      margin-bottom: 1rem;
-    }
-
-    .company {
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    .date {
-      font-style: italic;
-      color: #666;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <h1>Romil Mehta</h1>
-    <p>System Engineer | Data Scientist | AI Enthusiast</p>
-  </header>
+
+  <!-- Navbar -->
   <header class="navbar">
+    <div class="logo">Romil Mehta</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <div class="container">
+
+  <!-- Hero Section -->
+  <section class="hero">
     <h1>Romil Mehta</h1>
-    <p><strong>Phone:</strong> +1 (224) 227-9257 |
-       <strong>Email:</strong> <a href="mailto:romil1698@gmail.com">romil1698@gmail.com</a> |
-       <strong>Location:</strong> Chicago, IL</p>
+    <p>System Engineer | Data Scientist | AI Enthusiast</p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary"><i class="fas fa-laptop-code"></i> View Projects</a>
+      <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+    </div>
+  </section>
 
-  <div class="section" id="about">
-  <h2>About Me</h2>
-  <p>
-    System Engineer with over 5 years of experience supporting high-impact enterprise IT projects across the financial and technology sectors. Expert in architecting and integrating secure, scalable systems on cloud platforms (AWS, Azure) and managing Linux, Unix, and Windows infrastructures. Skilled in virtualization (VMware, Kubernetes), automation (Python, PowerShell), and advanced cybersecurity solutions. Proven track record in optimizing performance, leading cloud migrations, and collaborating with Agile teams to deliver resilient technology solutions.
-  </p>
-</div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      System Engineer with over 5 years of experience supporting high-impact enterprise IT projects...
+    </p>
+  </section>
 
-<div class="section" id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-category">
-    <h3>Network Engineering & Security</h3>
-    <p>TCP/IP, Firewalls, Rapid7, QRadar, Cisco</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Virtualization & Containers</h3>
-    <p>VMware, Docker, Kubernetes</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Cloud Platforms</h3>
-    <p>AWS, Azure, Google Cloud</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Programming & Scripting</h3>
-    <p>Java, Python, C++, Bash, PowerShell</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>DevOps & Automation</h3>
-    <p>Jenkins, Git, CI/CD, Ansible, Terraform</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Database Management</h3>
-    <p>SQL, MySQL, PostgreSQL; NoSQL: MongoDB; Oracle</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Monitoring & Analytics</h3>
-    <p>Datadog, Prometheus, Power BI, Tableau</p>
-  </div>
-
-  <div class="skills-category">
-    <h3>Project Methodologies & OS</h3>
-    <p>Agile, Scrum, Kanban, Waterfall, SDLC; JUnit, Selenium, Linux/Unix & Windows Server Administration</p>
-  </div>
-</div>
-
-<div class="section" id="experience">
-  <h2>Experience</h2>
-
-  <h3>JPMorgan Chase & Co | Sr. System Engineer (Jan 2025 – Present)</h3>
-  <ul>
-    <li>Architected secure enterprise systems across cloud/on-prem environments.</li>
-    <li>Managed Linux/Windows infrastructure; ensured regulatory compliance.</li>
-    <li>Led cloud migrations to AWS with automated CI/CD pipelines.</li>
-    <li>Built Python/PowerShell scripts to streamline DevOps operations.</li>
-    <li>Designed network architectures and monitored with QRadar, Datadog.</li>
-  </ul>
-
-  <h3>Infosys | System Engineer (Sep 2020 – Mar 2023)</h3>
-  <ul>
-    <li>Configured systems in multi-platform environment with secure practices.</li>
-    <li>Automated infrastructure using VMware, Hyper-V, SQL, and PowerShell.</li>
-    <li>Troubleshot complex storage, OS, and networking issues.</li>
-    <li>Engineered scalable infrastructure and performed security hardening.</li>
-  </ul>
-
-  <h3>Fingertips | Data Science Intern (Feb 2020 – Aug 2020)</h3>
-  <ul>
-    <li>Built ML models for financial forecasting and seizure prediction.</li>
-    <li>Used Python, Tableau, Power BI for dashboards and data storytelling.</li>
-    <li>Collaborated on deep learning systems using statistical methods.</li>
-  </ul>
-</div>
-
-<div class="section" id="projects">
-  <h2>Projects</h2>
-
-  <h3>Traffic Management System</h3>
-  <p>Built a real-time image-based traffic analyzer using Python and TensorFlow. Integrated AWS S3 for storage and enabled computer vision-based traffic prediction.</p>
-
-  <h3>Banking Software</h3>
-  <p>Developed secure banking transaction software using C and C++. Focused on authentication, encryption, and robust data protection mechanisms.</p>
-
-  <h3>Frontend + API Integration Module</h3>
-  <p>Created a frontend with HTML/CSS/JS and integrated it with RESTful APIs. Implemented error handling and logging for API responses.</p>
-</div>
-
-<div class="section" id="contact">
-  <h2>Contact</h2>
-  <p><strong>Email:</strong> <a href="mailto:romil1698@gmail.com">romil1698@gmail.com</a></p>
-  <p><strong>Phone:</strong> +1 (224) 227-9257</p>
-  <p><strong>Location:</strong> Chicago, IL</p>
-  <p><strong>GitHub:</strong> <a href="https://github.com/Krishna07r" target="_blank">github.com/Krishna07r</a></p>
-  <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/romil-mehta" target="_blank">linkedin.com/in/romil-mehta</a></p>
-</div>
-
-
-    <div class="section">
-      <h2>Experience</h2>
-
-      <div class="job-header">
-        <img src="assets/images/jpmorgan.png" alt="JPMorgan Logo" class="logo"/>
-        <div>
-          <div class="company">JPMorgan Chase & Co | Sr. System Engineer</div>
-          <div class="date">Jan 2025 – Present</div>
-        </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <h3><i class="fas fa-network-wired"></i> Network Engineering & Security</h3>
+        <p>TCP/IP, Firewalls, Rapid7, QRadar, Cisco</p>
       </div>
-      <ul>
-        <li>Architected secure enterprise systems across cloud/on-prem environments.</li>
-        <li>Managed Linux/Windows infrastructure; ensured regulatory compliance.</li>
-        <li>Led cloud migrations to AWS with automated CI/CD pipelines.</li>
-        <li>Built Python/PowerShell scripts to streamline DevOps operations.</li>
-      </ul>
-
-      <div class="job-header">
-        <img src="assets/images/infosys.png" alt="Infosys Logo" class="logo"/>
-        <div>
-          <div class="company">Infosys | System Engineer</div>
-          <div class="date">Sep 2020 – Mar 2023</div>
-        </div>
+      <div class="skill-box">
+        <h3><i class="fas fa-cubes"></i> Virtualization & Containers</h3>
+        <p>VMware, Docker, Kubernetes</p>
       </div>
-      <ul>
-        <li>Maintained multi-platform infrastructure & performed system hardening.</li>
-        <li>Implemented automation using VMware, SQL, Hyper-V, and cloud tools.</li>
-        <li>Troubleshot storage/network issues for high system uptime.</li>
-      </ul>
-
-      <div class="job-header">
-        <img src="assets/images/fingertips.png" alt="Fingertips Logo" class="logo"/>
-        <div>
-          <div class="company">Fingertips | Data Science Intern</div>
-          <div class="date">Feb 2020 – Aug 2020</div>
+      <div class="skill-box">
+        <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+        <p>AWS, Azure, Google Cloud</p>
+      </div>
+      <div class="skill-box">
+        <h3><i class="fas fa-code"></i> Programming & Scripting</h3>
+        <p>Java, Python, C++, Bash, PowerShell</p>
+      </div>
+      <div class="skill-box">
+        <h3><i class="fas fa-tools"></i> DevOps & Automation</h3>
+        <p>Jenkins, Git, CI/CD, Ansible, Terraform</p>
+      </div>
+      <div class="skill-box">
+        <h3><i class="fas fa-database"></i> Database Management</h3>
+        <p>SQL, MySQL, PostgreSQL; NoSQL: MongoDB; Oracle</p>
         </div>
       </div>
       <ul>
@@ -238,63 +77,56 @@
         <li>Used Python, Tableau, and Power BI for analysis and dashboards.</li>
       </ul>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Projects</h2>
-
-      <div class="project">
-        <strong>Traffic Management (Python, TensorFlow, AWS)</strong><br/>
-        Real-time image-based traffic analysis with AWS S3 integration and computer vision.
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <i class="fas fa-traffic-light project-icon"></i>
+        <h3>Traffic Management</h3>
+        <p>Real-time image-based traffic analysis using Python, TensorFlow, AWS S3.</p>
       </div>
-
-      <div class="project">
-        <strong>Banking Software (C, C++)</strong><br/>
-        Secure transactional system featuring authentication and user data protection.
+      <div class="project-card">
+        <i class="fas fa-university project-icon"></i>
+        <h3>Banking Software</h3>
+        <p>Secure transactional system featuring authentication and data protection.</p>
       </div>
-
-      <div class="project">
-        <strong>Frontend + API Integration</strong><br/>
-        Built UI in HTML/CSS/JavaScript with RESTful API calls and error handling.
+      <div class="project-card">
+        <i class="fas fa-code project-icon"></i>
+        <h3>Frontend + API Integration</h3>
+        <p>Built UI in HTML/CSS/JavaScript with RESTful API calls and error handling.</p>
       </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li><strong>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</strong><br/>
-        Credential ID: 102103544OCI25AICFA<br/>
-        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=102103544OCI25AICFA">View Credential</a></li>
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Master's in Computer Science</strong> - DePaul University, Chicago</li>
+      <li><strong>Bachelor's in Computer Engineering</strong> - Gujarat Technological University</li>
+    </ul>
+  </section>
 
-        <li><strong>Oracle AI Vector Search Certified Professional</strong><br/>
-        Credential ID: 102103544DB23AIOCP<br/>
-        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=102103544DB23AIOCP">View Credential</a></li>
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul>
+      <li><i class="fas fa-certificate"></i> Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</li>
+      <li><i class="fas fa-certificate"></i> Infosys Applied Cybersecurity Essentials</li>
+    </ul>
+  </section>
 
-        <li><strong>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</strong><br/>
-        Credential ID: 102103544OCI25GAIOCP<br/>
-        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=102103544OCI25GAIOCP">View Credential</a></li>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> romil1698@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +1 (224) 227-9257</p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Krishna07r" target="_blank">GitHub</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/romil-mehta" target="_blank">LinkedIn</a></p>
+  </section>
 
-        <li><strong>Infosys Applied Cybersecurity Essentials</strong><br/>
-        Credential ID: 38550356<br/>
-        <a href="https://verify.skilljar.com/c/38550356">View Credential</a></li>
-
-        <li><strong>Infosys Cybersecurity Foundations</strong><br/>
-        Credential ID: 38542438<br/>
-        <a href="https://verify.skilljar.com/c/38542438">View Credential</a></li>
-
-        <li><strong>Infosys Ethical Hacking</strong><br/>
-        Credential ID: 38542460<br/>
-        <a href="https://verify.skilljar.com/c/38542460">View Credential</a></li>
-
-        <li><strong>Infosys Vulnerability Management – Applied Cybersecurity Essentials</strong><br/>
-        Credential ID: 38542386<br/>
-        <a href="https://verify.skilljar.com/c/38542386">View Credential</a></li>
-
-        <li><strong>Infosys Enterprise Security</strong><br/>
-        Credential ID: 38542413<br/>
-        <a href="https://verify.skilljar.com/c/38542413">View Credential</a></li>
-      </ul>
-    </div>
-  </div>
-  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
