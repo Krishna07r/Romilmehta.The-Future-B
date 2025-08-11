@@ -39,7 +39,7 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      System Engineer with over 5 years of experience supporting high-impact enterprise IT projects across the financial and technology sectors. Skilled in cloud platforms, automation, and cybersecurity.
+      System & Software Engineer with 4+ years of experience designing, securing, and optimizing enterprise IT systems across cloud, on-premise, and hybrid environments. Skilled in AWS, Azure, Kubernetes, VMware, automation (Python, PowerShell), and full-stack system administration for Linux, Unix, and Windows platforms. Adept at building scalable, high-performance infrastructures, implementing advanced cybersecurity measures, and streamlining operations through DevOps practices. Passionate about delivering innovative, resilient technology solutions that drive business success
     </p>
   </section>
 
@@ -83,64 +83,128 @@
 
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card"><i class="fas fa-traffic-light project-icon"></i><h3>Traffic Management</h3><p>Real-time image-based traffic analysis using Python, TensorFlow, AWS S3.</p></div>
-      <div class="project-card"><i class="fas fa-university project-icon"></i><h3>Banking Software</h3><p>Secure transactional system with authentication and encryption.</p></div>
-      <div class="project-card"><i class="fas fa-code project-icon"></i><h3>Frontend + API Integration</h3><p>UI in HTML/CSS/JS integrated with RESTful APIs.</p></div>
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-icon-wrap">
+        <i class="fas fa-traffic-light project-icon"></i>
+      </div>
+      <h3>Traffic Management (CV + Cloud)</h3>
+      <p class="project-desc">
+        Real-time, image-based traffic analysis pipeline using <strong>Python</strong> and <strong>TensorFlow</strong>.
+        Ingests frames from edge cameras, runs detection, and stores events to <strong>AWS S3</strong> with metadata for analytics.
+        Designed for scalable processing and low-latency alerts.
+      </p>
+      <ul class="project-highlights">
+        <li>Built preprocessing & detection pipeline with OpenCV + TensorFlow.</li>
+        <li>Event storage + retrieval on AWS S3; optional SNS alerts.</li>
+        <li>Modular codebase for swapping models (YOLO/SSD/RCNN).</li>
+      </ul>
+      <div class="project-tags">
+        <span>Python</span><span>TensorFlow</span><span>OpenCV</span><span>AWS S3</span><span>REST</span>
+      </div>
+      <div class="project-actions">
+        <a class="btn primary sm" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+        <a class="btn secondary sm" href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
     </div>
-  </section>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-icon-wrap">
+        <i class="fas fa-university project-icon"></i>
+      </div>
+      <h3>Banking Software Core (Secure Transactions)</h3>
+      <p class="project-desc">
+        Foundational banking module in <strong>C/C++</strong> focusing on transaction flow, account ledger integrity,
+        and <strong>robust authentication</strong>. Emphasis on reliability, encryption-at-rest, and audit trails.
+      </p>
+      <ul class="project-highlights">
+        <li>Atomic debit/credit operations with rollback on failure.</li>
+        <li>Configurable auth (PIN/OTP) and salted hashing for credentials.</li>
+        <li>Append-only audit logs and reconciliation scripts.</li>
+      </ul>
+      <div class="project-tags">
+        <span>C</span><span>C++</span><span>Security</span><span>Auth</span><span>CLI</span>
+      </div>
+      <div class="project-actions">
+        <a class="btn primary sm" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+        <a class="btn secondary sm" href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-icon-wrap">
+        <i class="fas fa-code project-icon"></i>
+      </div>
+      <h3>Frontend + API Integration</h3>
+      <p class="project-desc">
+        Clean <strong>HTML/CSS/JS</strong> frontend wired to RESTful APIs with robust fetch wrappers, retry logic,
+        and graceful error states. Includes loading skeletons and toast notifications.
+      </p>
+      <ul class="project-highlights">
+        <li>Reusable API client (timeouts, backoff, JSON schema checks).</li>
+        <li>Accessible components (keyboard + ARIA) and mobile-first layout.</li>
+        <li>Error boundary views & observability hooks for browser logs.</li>
+      </ul>
+      <div class="project-tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST</span><span>UX</span>
+      </div>
+      <div class="project-actions">
+        <a class="btn primary sm" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+        <a class="btn secondary sm" href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Education Section -->
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <h3>DePaul University</h3>
-        <p>Master's in Computer Science</p>
-        <span>Chicago, IL</span>
-      </div>
-      <div class="edu-card">
-        <h3>Gujarat Technological University</h3>
-        <p>Bachelor's in Computer Engineering</p>
-        <span>Ahmedabad, India</span>
-      </div>
-    </div>
-  </section>
+<section id="education" class="section">
+  <h2>Education</h2>
+  <div class="edu-grid">
 
-  <!-- Experience Section -->
-<section id="experience" class="section">
-  <h2>Experience</h2>
-  <div class="experience-grid">
-    
-    <div class="experience-card">
-      <h3>Sr. System Engineer</h3>
-      <p class="company">JPMorgan Chase & Co | Jan 2025 – Present</p>
+    <!-- DePaul University -->
+    <div class="edu-card">
+      <h3>DePaul University</h3>
+      <p>Master's in Computer Science</p>
+      <span>Chicago, IL</span>
+      <h4>Relevant Coursework:</h4>
       <ul>
-        <li>Architected secure enterprise systems across cloud/on-prem environments.</li>
-        <li>Managed Linux/Windows infrastructure ensuring compliance and high availability.</li>
-        <li>Led cloud migrations to AWS with automated CI/CD pipelines.</li>
-        <li>Developed Python/PowerShell scripts for DevOps automation.</li>
+        <li>Applied Algorithms and Structures (CSC421)</li>
+        <li>Artificial Intelligence I (CSC480)</li>
+        <li>Database Programming (CSC452)</li>
+        <li>Distributed Systems I (CSC435)</li>
+        <li>Fundamentals of Data Science (DSC441)</li>
+        <li>Object Oriented Software Development (SE450)</li>
+        <li>Program Language Concepts (CSC447)</li>
+        <li>Programming Machine Learning Applications (DSC478)</li>
+        <li>Social Network Analysis (DSC480)</li>
+        <li>Virtualization and Cloud Computing (CSC464)</li>
       </ul>
     </div>
 
-    <div class="experience-card">
-      <h3>System Engineer</h3>
-      <p class="company">Infosys | Sep 2020 – Mar 2023</p>
+    <!-- Gujarat Technological University -->
+    <div class="edu-card">
+      <h3>Gujarat Technological University</h3>
+      <p>Bachelor's in Computer Engineering</p>
+      <span>Ahmedabad, India</span>
+      <h4>Relevant Coursework:</h4>
       <ul>
-        <li>Configured systems in multi-platform environments with security best practices.</li>
-        <li>Automated infrastructure tasks using VMware, Hyper-V, and SQL.</li>
-        <li>Troubleshot complex storage, OS, and networking issues.</li>
-      </ul>
-    </div>
-
-    <div class="experience-card">
-      <h3>Data Science Intern</h3>
-      <p class="company">Fingertips | Feb 2020 – Aug 2020</p>
-      <ul>
-        <li>Built ML models for financial forecasting and seizure prediction.</li>
-        <li>Developed dashboards using Python, Tableau, and Power BI.</li>
+        <li>Analysis and Design of Algorithms (2150703)</li>
+        <li>Computer Networks (2140709)</li>
+        <li>Data Structures (2130702)</li>
+        <li>Information and Network Security (2170709)</li>
+        <li>Microprocessor and Interfacing (2150707)</li>
+        <li>Software Engineering (2160701)</li>
+        <li>System Programming (2150708)</li>
+        <li>Web Technology (2160708)</li>
       </ul>
     </div>
 
@@ -148,23 +212,126 @@
 </section>
 
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li><i class="fas fa-certificate"></i> Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</li>
-      <li><i class="fas fa-certificate"></i> Infosys Applied Cybersecurity Essentials</li>
-    </ul>
-  </section>
+  <!-- Experience Section -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="experience-grid">
+    
+    <!-- JPMorgan Chase -->
+    <div class="experience-card">
+      <h3>Sr. System Engineer</h3>
+      <p class="company">JPMorgan Chase & Co | Jan 2025 – Present</p>
+      <ul>
+        <li>Architected and deployed secure, scalable enterprise systems across multi-cloud (AWS, Azure) and on-premises environments.</li>
+        <li>Implemented infrastructure-as-code with Terraform and Ansible, reducing manual provisioning time by 60%.</li>
+        <li>Managed and optimized Linux/Windows server infrastructure, ensuring high availability and compliance with industry standards.</li>
+        <li>Led multiple cloud migration projects, leveraging AWS services (EC2, RDS, S3) and automated CI/CD pipelines using Jenkins and GitHub Actions.</li>
+        <li>Developed Python and PowerShell scripts to automate monitoring, deployment, and incident response, improving operational efficiency.</li>
+        <li>Collaborated with cross-functional teams to design disaster recovery strategies, reducing RTO by 40%.</li>
+      </ul>
+    </div>
 
+    <!-- Infosys -->
+    <div class="experience-card">
+      <h3>System Engineer</h3>
+      <p class="company">Infosys | Sep 2020 – Mar 2023</p>
+      <ul>
+        <li>Configured and maintained enterprise-grade systems in mixed environments (Linux, Unix, Windows) with a focus on security hardening.</li>
+        <li>Automated infrastructure provisioning and maintenance tasks using VMware, Hyper-V, and SQL scripts.</li>
+        <li>Enhanced system performance through optimization of storage, OS, and network configurations.</li>
+        <li>Deployed and managed Citrix virtualization solutions to support remote workforce scalability.</li>
+        <li>Collaborated with development teams to integrate secure APIs and middleware components.</li>
+        <li>Provided 24/7 support for mission-critical banking applications, reducing downtime incidents by 35%.</li>
+      </ul>
+    </div>
+
+    <!-- Fingertips -->
+    <div class="experience-card">
+      <h3>Data Science Intern</h3>
+      <p class="company">Fingertips | Feb 2020 – Aug 2020</p>
+      <ul>
+        <li>Developed and deployed machine learning models for financial market trend prediction and seizure activity forecasting.</li>
+        <li>Performed data preprocessing, feature engineering, and model evaluation using Python, Scikit-learn, and TensorFlow.</li>
+        <li>Designed interactive dashboards in Tableau and Power BI to visualize key insights for stakeholders.</li>
+        <li>Collaborated with the data engineering team to implement ETL pipelines for real-time analytics.</li>
+        <li>Documented data science workflows to improve reproducibility and onboarding for future projects.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- Certifications Section -->
+<section id="certifications" class="section">
+  <h2>Certifications</h2>
+  <div class="certifications-grid">
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+      <p><a href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC6579462&trackId=OCI25AICFA&key=be90bd373c1e18f48fe3b850442261b12fdfeed6" target="_blank">View Credential</a></p>
+      <small>Oracle Cloud Infrastructure (OCI) · Cloud Computing · Cloud Architecture · IaaS · Oracle Autonomous Database · Generative AI · Machine Learning · Python · AI/ML Lifecycle · AI Ethics</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Oracle AI Vector Search Certified Professional</h3>
+      <p><a href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC6579462&trackId=DB23AIOCP&key=a7ef77accbb80e55193f234368b58ac992be1a26" target="_blank">View Credential</a></p>
+      <small>Vector Search Algorithms · AI-Powered Search · Database Indexing for Vector Embeddings · Cloud-native AI Model Deployment · Query Optimization</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</h3>
+      <p><a href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC6579462&trackId=OCI25GAIOCP&key=a33fed77a43d0664cef12a884525f387292ca9ed" target="_blank">View Credential</a></p>
+      <small>Generative AI · Large Language Models (LLMs) · Prompt Engineering · Data Preparation for AI</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Infosys Applied Cybersecurity Essentials</h3>
+      <p><a href="https://www.credential.net/18033965-052b-40c4-97c0-8a2d06c1d2c8#acc.FdTyovwC" target="_blank">View Credential</a></p>
+      <small>Information Security · Network Security · Threat Intelligence · Incident Response · Vulnerability Management · NIST Cybersecurity Framework</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Infosys Cybersecurity Foundations</h3>
+      <p><a href="https://www.credential.net/816b27af-5359-4657-834c-577386bb631c#acc.T06YGBix" target="_blank">View Credential</a></p>
+      <small>Cybersecurity Foundations · IT Security Principles · Security Awareness · Risk Management · Security Policy & Compliance</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Infosys Ethical Hacking</h3>
+      <p><a href="https://www.credential.net/7db9ef1b-a07a-4b8a-974b-6617ef153075#acc.HxFni80o" target="_blank">View Credential</a></p>
+      <small>Ethical Hacking · Penetration Testing · Vulnerability Assessment · Metasploit · Nmap/Wireshark · Privilege Escalation</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Infosys Vulnerability Management – Applied Cybersecurity Essentials</h3>
+      <p><a href="https://www.credential.net/799be31f-3aaf-456b-870c-2737ed4e2391#acc.bYZgsBh6" target="_blank">View Credential</a></p>
+      <small>Vulnerability Management · Risk Assessment · Patch Management · Rapid7 · Nessus · SIEM Tools</small>
+    </div>
+
+    <div class="cert-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Infosys Enterprise Security (Expired Sep 2021)</h3>
+      <p><a href="https://www.credential.net/c632e3ac-b6e4-4425-b189-4e1f29c2f9b7#acc.cK6ueSU8" target="_blank">View Credential</a></p>
+      <small>Endpoint Security · IAM · Firewall & Network Security · VPN · MFA · Zero Trust Security Model</small>
+    </div>
+
+  </div>
+</section>
   <!-- Contact Section -->
   <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><i class="fas fa-envelope"></i> romil1698@gmail.com</p>
-    <p><i class="fas fa-phone"></i> +1 (224) 227-9257</p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/Krishna07r" target="_blank">GitHub</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/romil-mehta-bn/" target="_blank">LinkedIn</a></p>
-  </section>
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out via email or connect on LinkedIn.</p>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:
 
 </body>
 </html>
