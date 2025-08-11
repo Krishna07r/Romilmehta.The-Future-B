@@ -187,17 +187,60 @@ body {
 
 
 /* Education Grid */
-.edu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+/* ===== Education (Card Style) ===== */
+.edu-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:1.25rem;
 }
-.edu-card {
-  background: white;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+.edu-card{
+  position:relative;
+  background:#fff;
+  padding:1.25rem 1.25rem 1rem;
+  border-radius:16px;
+  border:1px solid #e8eefc;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
 }
+
+/* gradient top bar */
+.edu-card::before{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0; height:6px;
+  border-radius:16px 16px 0 0;
+  background:linear-gradient(90deg,#3b82f6,#22c55e,#06b6d4);
+}
+
+.edu-header{
+  display:flex; align-items:center; gap:12px; margin-top:.35rem;
+}
+
+.edu-icon{
+  width:52px;height:52px;border-radius:12px;
+  display:grid;place-items:center;
+  background:#eef5ff; border:1px solid #d7e6ff;
+}
+.edu-icon i{ color:#0b4aa6; font-size:1.25rem; }
+
+.degree{ margin-top:2px; color:#334155; }
+.location{ color:#6b7280; font-size:.92rem; }
+
+#education h4{
+  margin:.9rem 0 .5rem; color:#0b4aa6; font-size:1rem;
+}
+
+.badge-wrap{
+  display:flex; flex-wrap:wrap; gap:.5rem;
+}
+
+.badge{
+  background:#f1f5ff; color:#0b4aa6;
+  border:1px solid #dbe7fb;
+  padding:.34rem .6rem; border-radius:999px;
+  font-size:.86rem; line-height:1;
+}
+
 
 /* Experience Grid */
 .experience-grid {
@@ -276,4 +319,35 @@ body {
   font-size: 0.85rem;
   color: #555;
 }
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-info i {
+  color: #007bff;
+  margin-right: 0.5rem;
+}
+
+.contact-info a {
+  color: #003366;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* Footer */
+footer {
+  background-color: #003366; /* same as navbar */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
 
