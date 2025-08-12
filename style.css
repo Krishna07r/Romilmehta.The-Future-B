@@ -185,6 +185,37 @@ body {
 }
 .btn.secondary.sm:hover { background: #eef4ff; }
 
+/* Project Header: icon on left, title on right */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.9rem;
+}
+
+.project-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #eaf4ff, #ffffff);
+  border: 1px solid #dbe7fb;
+  flex-shrink: 0; /* keep icon size fixed */
+}
+
+.project-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.project-card h3 {
+  margin: 0; /* remove extra gap since now aligned in flex */
+  color: #003366;
+  font-size: 1.15rem;
+}
+
+
 
 /* Education Grid */
 /* ===== Education (Card Style) ===== */
