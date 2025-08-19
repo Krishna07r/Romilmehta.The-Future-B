@@ -9,9 +9,27 @@
 </head>
 <body>
 
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav-links');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+</script>
+
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Romil Mehta</div>
+
+    <!-- Hamburger toggle button -->
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
     <nav>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
@@ -180,9 +198,17 @@
     <!-- DePaul -->
     <div class="edu-card">
       <div class="edu-header">
-        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <!-- Add logo + link -->
+        <div class="edu-icon">
+          <a href="https://www.cdm.depaul.edu/Pages/default55.aspx" target="_blank">
+            <img src="images/depaul-logo.png" alt="DePaul University Logo" class="edu-logo">
+          </a>
+        </div>
         <div>
-          <h3>DePaul University</h3>
+          <!-- Make name clickable -->
+          <h3>
+            <a href="https://www.cdm.depaul.edu/Pages/default55.aspx" target="_blank">DePaul University</a>
+          </h3>
           <p class="degree">Master’s in Computer Science</p>
           <p class="location"><i class="fas fa-location-dot"></i> Chicago, IL</p>
         </div>
@@ -206,9 +232,17 @@
     <!-- GTU -->
     <div class="edu-card">
       <div class="edu-header">
-        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <!-- Add logo + link -->
+        <div class="edu-icon">
+          <a href="https://www.gtu.ac.in/" target="_blank">
+            <img src="images/gtu-logo.png" alt="GTU Logo" class="edu-logo">
+          </a>
+        </div>
         <div>
-          <h3>Gujarat Technological University</h3>
+          <!-- Make name clickable -->
+          <h3>
+            <a href="https://www.gtu.ac.in/" target="_blank">Gujarat Technological University</a>
+          </h3>
           <p class="degree">Bachelor’s in Computer Engineering</p>
           <p class="location"><i class="fas fa-location-dot"></i> Ahmedabad, India</p>
         </div>
@@ -229,6 +263,7 @@
 
   </div>
 </section>
+
 
 
 
