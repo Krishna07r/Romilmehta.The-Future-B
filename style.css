@@ -27,6 +27,53 @@ body {
 .nav-links a {color: white; text-decoration: none;}
 .nav-links a:hover {text-decoration: underline;}
 
+/* Desktop default */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 0;
+  color: #fff;              /* match your navbar text color */
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .menu-toggle { display: inline-flex; align-items: center; }
+
+  .navbar {
+    position: sticky; top: 0; z-index: 1000;
+    padding: 0.9rem 1rem;
+  }
+
+  /* Hide the menu by default on mobile */
+  .nav-links {
+    position: absolute;
+    top: 60px;              /* just below navbar */
+    right: 12px;
+    left: 12px;
+    display: none;          /* hidden until active */
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    overflow: hidden;
+  }
+
+  .nav-links.active { display: flex; }  /* show when active */
+
+  .nav-links li { border-top: 1px solid rgba(0,0,0,.06); }
+  .nav-links li:first-child { border-top: 0; }
+  .nav-links a {
+    color: #003366; 
+    padding: 0.9rem 1rem; 
+    display: block; 
+    text-decoration: none;
+  }
+}
+
+
 /* Hero Section */
 .hero {
   padding: 6rem 2rem 3rem;
